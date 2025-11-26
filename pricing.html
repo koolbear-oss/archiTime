@@ -4,368 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing — ArchiTime</title>
-    <meta name="description" content="ArchiTime pricing plans for every stage of your practice. From free basic tracking to enterprise team solutions.">
+    <meta name="description" content="ArchiTime pricing plans. Start free, upgrade as you grow.">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav" id="nav">
+    <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-icon">◷</span>
-                <span class="logo-text">ArchiTime</span>
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <span>ArchiTime</span>
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="features.html">Features</a>
+                <a href="index.html">Home</a>
                 <a href="pricing.html" class="active">Pricing</a>
-                <a href="how-it-works.html">How It Works</a>
-                <a href="#" class="nav-cta">Start Free</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
+            <button class="nav-toggle" id="navToggle">
                 <span></span>
                 <span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="page-hero">
+    <!-- Header -->
+    <section class="page-header">
         <div class="container">
-            <span class="section-tag">Pricing</span>
-            <h1 class="page-title">Plans that grow with your practice</h1>
-            <p class="page-subtitle">Start free, upgrade when you need more. No hidden fees, no surprises.</p>
+            <h1>Compare Plans</h1>
+            <p>Start free, upgrade when you need more features.</p>
         </div>
     </section>
 
     <!-- Pricing Cards -->
     <section class="pricing">
         <div class="container">
-            <div class="billing-toggle">
-                <span class="toggle-label active" data-period="monthly">Monthly</span>
-                <button class="toggle-switch" id="billingToggle">
-                    <span class="toggle-handle"></span>
-                </button>
-                <span class="toggle-label" data-period="annual">Annual <span class="save-badge">Save 20%</span></span>
-            </div>
-
             <div class="pricing-grid">
-                <!-- Basic Tier -->
+                <!-- Basic -->
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <span class="tier-badge">Tier 1</span>
-                        <h3 class="tier-name">Basic</h3>
-                        <p class="tier-description">Get started with essential time tracking</p>
+                    <div class="tier-badge basic">Basic</div>
+                    <h3>Basic</h3>
+                    <p class="tier-tagline">Essential time tracking</p>
+                    <p class="tier-description">Perfect for solo practitioners getting started</p>
+                    <div class="price">
+                        <span class="amount">Free</span>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price-amount" data-monthly="0" data-annual="0">€0</span>
-                        <span class="price-period">forever free</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Up to 3 active projects
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Basic time logging
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Project lifecycle management
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Dashboard overview
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Mobile-optimized interface
-                        </li>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Mobile navigation and interface</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Basic project management</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Time tracking essentials</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Basic quotes and invoicing</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Dashboard quick stats</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Basic analytics</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Project notes</li>
                     </ul>
-                    <a href="#" class="btn btn-secondary pricing-cta">Start Free</a>
-                    <p class="pricing-note">No credit card required</p>
+                    <p class="tier-note">Free Forever</p>
+                    <a href="#" class="btn btn-secondary">Get Started</a>
                 </div>
 
-                <!-- Independent Tier -->
+                <!-- Independent -->
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <span class="tier-badge">Tier 2</span>
-                        <h3 class="tier-name">Independent</h3>
-                        <p class="tier-description">For consultants tracking multiple clients</p>
+                    <div class="tier-badge independent">Independent</div>
+                    <h3>Independent</h3>
+                    <p class="tier-tagline">Enhanced productivity</p>
+                    <p class="tier-description">For established professionals</p>
+                    <div class="price">
+                        <span class="amount">€15</span>
+                        <span class="period">/month</span>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price-amount" data-monthly="9" data-annual="7">€9</span>
-                        <span class="price-period">/month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Up to 10 active projects
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Edit your time entries
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Custom dropdowns (phases, tasks)
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Quote creation & tracking
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Payment status tracking
-                        </li>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Everything in Basic, plus:</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Advanced time tracking with phases</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Task type categorization</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Custom dropdown values</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Enhanced project organization</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Priority support</li>
                     </ul>
-                    <a href="#" class="btn btn-secondary pricing-cta">Start Trial</a>
-                    <p class="pricing-note">14-day free trial</p>
+                    <a href="#" class="btn btn-secondary">Start Trial</a>
                 </div>
 
-                <!-- Solo Tier (Popular) -->
+                <!-- Solo (Popular) -->
                 <div class="pricing-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <span class="tier-badge">Tier 3</span>
-                        <h3 class="tier-name">Solo</h3>
-                        <p class="tier-description">Complete toolkit for solo practitioners</p>
+                    <div class="popular-label">★ Most Popular</div>
+                    <div class="tier-badge solo">Solo</div>
+                    <h3>Solo</h3>
+                    <p class="tier-tagline">Professional practice</p>
+                    <p class="tier-description">Comprehensive solo practice management</p>
+                    <div class="price">
+                        <span class="amount">€30</span>
+                        <span class="period">/month</span>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price-amount" data-monthly="19" data-annual="15">€19</span>
-                        <span class="price-period">/month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <strong>Unlimited</strong> projects
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Project notes & tasks
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Profitability analytics
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Project health scores
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Data export (CSV)
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Profitability target setting
-                        </li>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Everything in Independent, plus:</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Advanced analytics charts</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Financial analytics and insights</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Advanced quote management</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Quote templates and reminders</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Data quality tools</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Time reporting and export</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> CSV data export</li>
                     </ul>
-                    <a href="#" class="btn btn-primary pricing-cta">Start Trial</a>
-                    <p class="pricing-note">14-day free trial</p>
+                    <a href="#" class="btn btn-primary">Start Trial</a>
                 </div>
 
-                <!-- Collaborative Tier -->
+                <!-- Collaborative -->
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <span class="tier-badge">Tier 4</span>
-                        <h3 class="tier-name">Collaborative</h3>
-                        <p class="tier-description">Work seamlessly with partners and teams</p>
+                    <div class="tier-badge collaborative">Collaborative</div>
+                    <h3>Collaborative</h3>
+                    <p class="tier-tagline">Small team features</p>
+                    <p class="tier-description">Collaboration tools for growing firms</p>
+                    <div class="price">
+                        <span class="amount">€50</span>
+                        <span class="period">/month</span>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price-amount" data-monthly="39" data-annual="31">€39</span>
-                        <span class="price-period">/month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Everything in Solo
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Invite project collaborators
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            View quote amounts
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Team time tracking
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Team analytics dashboard
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Permission controls
-                        </li>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Everything in Solo, plus:</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Advanced team settings</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Project sharing</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Team member management</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Internal comments</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Priority support</li>
                     </ul>
-                    <a href="#" class="btn btn-secondary pricing-cta">Start Trial</a>
-                    <p class="pricing-note">14-day free trial</p>
+                    <a href="#" class="btn btn-secondary">Start Trial</a>
                 </div>
 
-                <!-- Enterprise Tier -->
-                <div class="pricing-card enterprise">
-                    <div class="pricing-header">
-                        <span class="tier-badge">Tier 5</span>
-                        <h3 class="tier-name">Enterprise</h3>
-                        <p class="tier-description">For growing firms with advanced needs</p>
+                <!-- Enterprise -->
+                <div class="pricing-card">
+                    <div class="tier-badge enterprise">Enterprise</div>
+                    <h3>Enterprise</h3>
+                    <p class="tier-tagline">Enterprise solutions</p>
+                    <p class="tier-description">For large architectural firms</p>
+                    <div class="price">
+                        <span class="amount">€100</span>
+                        <span class="period">/month</span>
                     </div>
-                    <div class="pricing-price">
-                        <span class="price-amount">Custom</span>
-                        <span class="price-period">contact us</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Everything in Collaborative
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            API access
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Custom integrations
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Dedicated support
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Custom onboarding
-                        </li>
-                        <li>
-                            <svg class="feature-check" viewBox="0 0 20 20" fill="none">
-                                <path d="M4 10L8 14L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            SLA guarantees
-                        </li>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Everything in Collaborative, plus:</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Advanced data export (PDF reports)</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> API access (coming soon)</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Industry benchmarking (coming soon)</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Bulk operations (coming soon)</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Dedicated support</li>
+                        <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Custom integrations</li>
                     </ul>
-                    <a href="#" class="btn btn-secondary pricing-cta">Contact Sales</a>
-                    <p class="pricing-note">Custom pricing</p>
+                    <a href="#" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ -->
     <section class="faq">
         <div class="container">
-            <div class="section-header center">
-                <span class="section-tag">FAQ</span>
-                <h2 class="section-title">Common questions</h2>
-            </div>
+            <h2>Questions?</h2>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3 class="faq-question">Can I switch plans later?</h3>
-                    <p class="faq-answer">Yes! You can upgrade or downgrade your plan at any time. When upgrading, you'll get immediate access to new features. When downgrading, your current features remain until the end of your billing period.</p>
+                    <h3>Can I switch plans?</h3>
+                    <p>Yes, upgrade or downgrade anytime. Changes take effect immediately.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question">What happens to my data if I downgrade?</h3>
-                    <p class="faq-answer">Your data is never deleted. If you downgrade and exceed project limits, older projects become read-only. You can still view and export them, but won't be able to add new time entries until you archive some projects or upgrade.</p>
+                    <h3>Is there a free trial?</h3>
+                    <p>All paid plans include a 14-day free trial. Basic is free forever.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question">Is there a free trial?</h3>
-                    <p class="faq-answer">Yes! All paid plans include a 14-day free trial with full access to features. No credit card required to start. The Basic plan is free forever.</p>
+                    <h3>What payment methods?</h3>
+                    <p>We accept all major credit cards and PayPal.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question">How does collaboration work?</h3>
-                    <p class="faq-answer">On the Collaborative tier, you can invite other ArchiTime users to specific projects. Collaborators can log time and view project details, while you maintain ownership and control over the project.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I export my data?</h3>
-                    <p class="faq-answer">Data export is available from the Solo tier and above. You can export all your projects, time logs, quotes, and notes to CSV format. Your data belongs to you.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">What payment methods do you accept?</h3>
-                    <p class="faq-answer">We accept all major credit cards (Visa, Mastercard, Amex) and PayPal. Enterprise customers can also pay by invoice.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready to start?</h2>
-                <p class="cta-text">Begin with our free Basic tier. Upgrade when your practice grows.</p>
-                <div class="cta-actions">
-                    <a href="#" class="btn btn-primary btn-large">
-                        Create Free Account
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
+                    <h3>Can I export my data?</h3>
+                    <p>Yes, CSV export is available from Solo tier and above.</p>
                 </div>
             </div>
         </div>
@@ -374,35 +189,26 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html" class="nav-logo">
-                        <span class="logo-icon">◷</span>
-                        <span class="logo-text">ArchiTime</span>
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>ArchiTime</span>
                     </a>
-                    <p>Time tracking and project management for independent professionals.</p>
+                    <p>Time tracking for independent professionals.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Product</h4>
-                    <a href="features.html">Features</a>
+                    <a href="index.html">Home</a>
                     <a href="pricing.html">Pricing</a>
-                    <a href="how-it-works.html">How It Works</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Blog</a>
-                </div>
-                <div class="footer-links">
-                    <h4>Legal</h4>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">GDPR</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 ArchiTime. All rights reserved.</p>
+                <p>© 2025 ArchiTime. All rights reserved.</p>
             </div>
         </div>
     </footer>
