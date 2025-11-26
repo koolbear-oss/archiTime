@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiTime — Time Tracking for Independent Professionals</title>
+    <meta name="description" content="ArchiTime helps architects, consultants, and independent professionals track time, manage projects, and gain insights into their practice's profitability.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">◷</span>
+                <span class="logo-text">ArchiTime</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="features.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="#" class="nav-cta">Start Free</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Trusted by 500+ independent professionals
+            </div>
+            <h1 class="hero-title">
+                Know your time.<br>
+                <span class="title-accent">Own your worth.</span>
+            </h1>
+            <p class="hero-subtitle">
+                ArchiTime transforms how independent professionals track time, manage projects, and understand their true profitability. Built for architects, consultants, and creative professionals who value precision.
+            </p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">
+                    Start Free Trial
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="how-it-works.html" class="btn btn-secondary">See How It Works</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">2.4M+</span>
+                    <span class="stat-label">Hours Tracked</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">€8.2M</span>
+                    <span class="stat-label">Revenue Managed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">23%</span>
+                    <span class="stat-label">Avg. Profitability Increase</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="app-preview">
+                <div class="app-preview-header">
+                    <div class="preview-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="preview-title">Dashboard</span>
+                </div>
+                <div class="app-preview-content">
+                    <div class="preview-stats">
+                        <div class="preview-stat">
+                            <span class="preview-stat-label">This Week</span>
+                            <span class="preview-stat-value">32.5h</span>
+                            <div class="preview-bar" style="--width: 81%"></div>
+                        </div>
+                        <div class="preview-stat">
+                            <span class="preview-stat-label">Active Projects</span>
+                            <span class="preview-stat-value">7</span>
+                            <div class="preview-bar" style="--width: 70%"></div>
+                        </div>
+                        <div class="preview-stat">
+                            <span class="preview-stat-label">Hourly Rate</span>
+                            <span class="preview-stat-value">€87</span>
+                            <div class="preview-bar accent" style="--width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="preview-projects">
+                        <div class="preview-project">
+                            <span class="project-name">Villa Renovation</span>
+                            <span class="project-hours">12.5h</span>
+                        </div>
+                        <div class="preview-project">
+                            <span class="project-name">Office Complex</span>
+                            <span class="project-hours">8.0h</span>
+                        </div>
+                        <div class="preview-project">
+                            <span class="project-name">Landscape Design</span>
+                            <span class="project-hours">6.5h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The Challenge</span>
+                <h2 class="section-title">Sound familiar?</h2>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📊</div>
+                    <h3>No visibility into profitability</h3>
+                    <p>You finish projects but never know if you actually made money. Hours vanish, quotes go stale, and your true hourly rate remains a mystery.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Time slips through the cracks</h3>
+                    <p>Quick calls, email threads, site visits — unbilled hours add up. By month's end, you've donated days of free work.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📁</div>
+                    <h3>Projects live in chaos</h3>
+                    <p>Spreadsheets, sticky notes, email folders. Your project data is scattered across tools that don't talk to each other.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Quotes become guesswork</h3>
+                    <p>Without data from past projects, every quote is a gamble. You either underbid and lose money, or overbid and lose the job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <div class="solution-content">
+                <span class="section-tag">The Solution</span>
+                <h2 class="section-title">One tool.<br>Complete clarity.</h2>
+                <p class="solution-text">
+                    ArchiTime brings your projects, time, quotes, and insights into one elegant workspace. Built specifically for independent professionals who need precision without complexity.
+                </p>
+                <ul class="solution-list">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Track time by project, phase, and task type
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        See your true hourly rate in real-time
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Quote with confidence using historical data
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Collaborate seamlessly with partners
+                    </li>
+                </ul>
+                <a href="features.html" class="btn btn-primary">Explore All Features</a>
+            </div>
+            <div class="solution-visual">
+                <div class="feature-cards">
+                    <div class="feature-card card-1">
+                        <div class="feature-card-icon">⏱</div>
+                        <h4>Smart Time Logging</h4>
+                        <p>Log time in seconds with intelligent dropdowns and recent project suggestions.</p>
+                    </div>
+                    <div class="feature-card card-2">
+                        <div class="feature-card-icon">📈</div>
+                        <h4>Project Health</h4>
+                        <p>Visual health scores show which projects need attention before they go off-track.</p>
+                    </div>
+                    <div class="feature-card card-3">
+                        <div class="feature-card-icon">💰</div>
+                        <h4>Financial Clarity</h4>
+                        <p>Track quotes, payments, and calculate realized versus potential hourly rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="audience">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">Who It's For</span>
+                <h2 class="section-title">Built for professionals who bill by the hour</h2>
+                <p class="section-subtitle">ArchiTime serves anyone who needs to understand where their time goes and what it's worth.</p>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🏛️</div>
+                    <h3>Architects</h3>
+                    <p>Track design phases, site visits, and client meetings. See which project types are most profitable.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">💼</div>
+                    <h3>Consultants</h3>
+                    <p>Log billable hours accurately, manage multiple clients, and never miss an invoice again.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">🎨</div>
+                    <h3>Designers</h3>
+                    <p>Understand creative project profitability and build a data-backed portfolio of your work.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">⚖️</div>
+                    <h3>Legal Professionals</h3>
+                    <p>Precise time tracking for case management with detailed breakdowns by matter type.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">🔧</div>
+                    <h3>Engineers</h3>
+                    <p>Track technical phases, reviews, and site supervision with customizable task categories.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">📋</div>
+                    <h3>Project Managers</h3>
+                    <p>Oversee team time allocation, monitor project health, and keep budgets on track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">What Users Say</span>
+                <h2 class="section-title">Trusted by independents worldwide</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured">
+                    <div class="testimonial-content">
+                        <p>"ArchiTime changed how I run my practice. I finally understand which clients are profitable and which projects eat my time. My hourly rate increased 34% in six months."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SV</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Vermeulen</span>
+                            <span class="author-role">Independent Architect, Brussels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Simple enough to use daily, powerful enough to run my business. The project health scores are a game-changer."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Keller</span>
+                            <span class="author-role">Design Consultant, Munich</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Finally, a time tracker that understands how creative professionals actually work. The phase tracking alone is worth it."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LP</div>
+                        <div class="author-info">
+                            <span class="author-name">Laura Pietersen</span>
+                            <span class="author-role">Interior Designer, Amsterdam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to take control of your time?</h2>
+                <p class="cta-text">Start with our free Basic tier. No credit card required. Upgrade when you need more.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-large">
+                        Start Free Today
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="pricing.html" class="btn btn-ghost">View Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon">◷</span>
+                        <span class="logo-text">ArchiTime</span>
+                    </a>
+                    <p>Time tracking and project management for independent professionals.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="features.html">Features</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="how-it-works.html">How It Works</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">GDPR</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ArchiTime. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
